@@ -408,56 +408,170 @@
     { id:1, name:'ALDEA INICIAL', biomeLabel:'ALDEA INICIAL · VOCABULARIO', icon:'🏘️', zone:1, enemyName:'SLIME MANGO',
       desc:'Vocabulario básico: comida, animales, familia, números y más.',
       questions:[
-        { q:'¿Cómo se dice "manzana" en inglés?', opts:['Apple','Grape','Peach','Lemon'], correct:0 },
-        { q:'¿Cómo se dice "perro" en inglés?', opts:['Cat','Dog','Bird','Fish'], correct:1 },
-        { q:'¿Cómo se dice el número tres en inglés?', opts:['Two','Four','Three','Five'], correct:2 },
-        { q:'¿Cuál palabra significa "familia"?', opts:['Friend','House','Family','Animal'], correct:2 },
-        { q:'¿Cómo se dice "agua" en inglés?', opts:['Water','Milk','Juice','Bread'], correct:0 },
+        { q:'¿Cómo se dice "pan" en inglés?', opts:['Bread', 'Rice', 'Cheese', 'Butter'], correct:0 },
+        { q:'¿Cómo se dice "queso" en inglés?', opts:['Milk', 'Cheese', 'Egg', 'Meat'], correct:1 },
+        { q:'¿Cómo se dice "huevo" en inglés?', opts:['Egg', 'Fish', 'Soup', 'Salt'], correct:0 },
+        { q:'¿Cómo se dice "carne" en inglés?', opts:['Meat', 'Rice', 'Bread', 'Sugar'], correct:0 },
+        { q:'¿Cómo se dice "arroz" en inglés?', opts:['Rice', 'Pasta', 'Corn', 'Beans'], correct:0 },
+        { q:'¿Cómo se dice "agua" en inglés?', opts:['Water', 'Milk', 'Juice', 'Soda'], correct:0 },
+        { q:'¿Cómo se dice "leche" en inglés?', opts:['Juice', 'Milk', 'Water', 'Coffee'], correct:1 },
+        { q:'¿Cómo se dice "jugo" en inglés?', opts:['Juice', 'Tea', 'Milk', 'Soda'], correct:0 },
+        { q:'¿Cómo se dice "café" en inglés?', opts:['Tea', 'Coffee', 'Water', 'Juice'], correct:1 },
+        { q:'¿Cómo se dice "manzana" en inglés?', opts:['Apple', 'Grape', 'Peach', 'Lemon'], correct:0 },
+        { q:'¿Cómo se dice "plátano/banana" en inglés?', opts:['Banana', 'Orange', 'Melon', 'Cherry'], correct:0 },
+        { q:'¿Cómo se dice "naranja" en inglés?', opts:['Lemon', 'Orange', 'Grape', 'Apple'], correct:1 },
+        { q:'¿Cómo se dice "zanahoria" en inglés?', opts:['Carrot', 'Potato', 'Onion', 'Tomato'], correct:0 },
+        { q:'¿Cómo se dice "papa/patata" en inglés?', opts:['Carrot', 'Tomato', 'Potato', 'Onion'], correct:2 },
+        { q:'¿Cómo se dice "tomate" en inglés?', opts:['Tomato', 'Potato', 'Carrot', 'Pepper'], correct:0 },
+        { q:'¿Cómo se dice "perro" en inglés?', opts:['Cat', 'Dog', 'Bird', 'Fish'], correct:1 },
+        { q:'¿Cómo se dice "gato" en inglés?', opts:['Cat', 'Dog', 'Cow', 'Pig'], correct:0 },
+        { q:'¿Cómo se dice "pájaro" en inglés?', opts:['Bird', 'Fish', 'Bear', 'Bee'], correct:0 },
+        { q:'¿Cómo se dice "caballo" en inglés?', opts:['Horse', 'Cow', 'Sheep', 'Pig'], correct:0 },
+        { q:'¿Cómo se dice "pez" en inglés?', opts:['Bird', 'Fish', 'Frog', 'Duck'], correct:1 },
+        { q:'¿Cómo se dice "vaca" en inglés?', opts:['Cow', 'Horse', 'Goat', 'Sheep'], correct:0 },
+        { q:'¿Cómo se dice "cocina" en inglés?', opts:['Kitchen', 'Bedroom', 'Bathroom', 'Garden'], correct:0 },
+        { q:'¿Cómo se dice "dormitorio" en inglés?', opts:['Kitchen', 'Bedroom', 'Living room', 'Garage'], correct:1 },
+        { q:'¿Cómo se dice "baño" en inglés?', opts:['Bathroom', 'Bedroom', 'Kitchen', 'Hall'], correct:0 },
+        { q:'¿Cómo se dice "jardín" en inglés?', opts:['Garden', 'Garage', 'Roof', 'Door'], correct:0 },
+        { q:'¿Cómo se dice "puerta" en inglés?', opts:['Window', 'Door', 'Wall', 'Roof'], correct:1 },
+        { q:'¿Cuál palabra significa "familia"?', opts:['Friend', 'House', 'Family', 'Animal'], correct:2 },
+        { q:'¿Cómo se dice "madre" en inglés?', opts:['Father', 'Mother', 'Sister', 'Brother'], correct:1 },
+        { q:'¿Cómo se dice "padre" en inglés?', opts:['Father', 'Mother', 'Uncle', 'Aunt'], correct:0 },
+        { q:'¿Cómo se dice "hermano" en inglés?', opts:['Sister', 'Brother', 'Cousin', 'Son'], correct:1 },
+        { q:'¿Cómo se dice "hermana" en inglés?', opts:['Sister', 'Brother', 'Aunt', 'Daughter'], correct:0 },
+        { q:'¿Cómo se dice "abuela" en inglés?', opts:['Grandmother', 'Grandfather', 'Mother', 'Aunt'], correct:0 },
+        { q:'¿Cómo se dice "cabeza" en inglés?', opts:['Head', 'Hand', 'Foot', 'Arm'], correct:0 },
+        { q:'¿Cómo se dice "mano" en inglés?', opts:['Foot', 'Hand', 'Leg', 'Arm'], correct:1 },
+        { q:'¿Cómo se dice "pie" en inglés?', opts:['Hand', 'Foot', 'Head', 'Ear'], correct:1 },
+        { q:'¿Cómo se dice "ojo" en inglés?', opts:['Ear', 'Nose', 'Eye', 'Mouth'], correct:2 },
+        { q:'¿Cómo se dice "boca" en inglés?', opts:['Nose', 'Mouth', 'Eye', 'Ear'], correct:1 },
+        { q:'¿Cómo se dice el número uno en inglés?', opts:['One', 'Two', 'Three', 'Four'], correct:0 },
+        { q:'¿Cómo se dice el número tres en inglés?', opts:['Two', 'Four', 'Three', 'Five'], correct:2 },
+        { q:'¿Cómo se dice el número cinco en inglés?', opts:['Four', 'Five', 'Six', 'Seven'], correct:1 },
+        { q:'¿Cómo se dice el número siete en inglés?', opts:['Six', 'Eight', 'Seven', 'Nine'], correct:2 },
+        { q:'¿Cómo se dice el número diez en inglés?', opts:['Nine', 'Ten', 'Eleven', 'Eight'], correct:1 }
       ]},
     { id:2, name:'BOSQUE VERDE', biomeLabel:'BOSQUE VERDE · PRESENTE SIMPLE', icon:'🌲', zone:2, enemyName:'SLIME MANGO',
       desc:'Verbos regulares e irregulares en presente simple.',
       questions:[
-        { q:'She ___ to school every day.', opts:['go','goes','going','went'], correct:1 },
-        { q:'I ___ not like broccoli.', opts:['do','does','am','is'], correct:0 },
-        { q:'___ you like pizza?', opts:['Do','Does','Are','Is'], correct:0 },
-        { q:'He ___ his homework every night.', opts:['do','does','doing','did'], correct:0 },
-        { q:'They ___ football on Saturdays.', opts:['plays','play','playing','played'], correct:1 },
+        { q:'She ___ to school every day.', opts:['go', 'goes', 'going', 'went'], correct:1 },
+        { q:'I ___ not like broccoli.', opts:['do', 'does', 'am', 'is'], correct:0 },
+        { q:'___ you like pizza?', opts:['Do', 'Does', 'Are', 'Is'], correct:0 },
+        { q:'He ___ his homework every night.', opts:['do', 'does', 'doing', 'did'], correct:1 },
+        { q:'They ___ football on Saturdays.', opts:['plays', 'play', 'playing', 'played'], correct:1 },
+        { q:'My mom ___ dinner every evening.', opts:['cook', 'cooks', 'cooking', 'cooked'], correct:1 },
+        { q:'We ___ TV after school.', opts:['watch', 'watches', 'watching', 'watched'], correct:0 },
+        { q:'___ she speak English?', opts:['Do', 'Does', 'Is', 'Are'], correct:1 },
+        { q:'I ___ up at 7 am every day.', opts:['get', 'gets', 'getting', 'got'], correct:0 },
+        { q:'The dog ___ a lot at night.', opts:['bark', 'barks', 'barking', 'barked'], correct:1 },
+        { q:'___ they live in Guatemala?', opts:['Do', 'Does', 'Is', 'Are'], correct:0 },
+        { q:'My brother ___ not eat vegetables.', opts:['do', 'does', 'don\'t', 'doesn\'t'], correct:3 },
+        { q:'I ___ not have a bicycle.', opts:['do', 'don\'t', 'doesn\'t', 'does'], correct:1 },
+        { q:'She ___ not watch cartoons.', opts:['don\'t', 'doesn\'t', 'do', 'not'], correct:1 },
+        { q:'We ___ English every Monday.', opts:['study', 'studies', 'studying', 'studied'], correct:0 },
+        { q:'He ___ to the park on weekends.', opts:['go', 'goes', 'going', 'gone'], correct:1 },
+        { q:'___ your father work at night?', opts:['Do', 'Does', 'Is', 'Are'], correct:1 },
+        { q:'My friends ___ video games after class.', opts:['play', 'plays', 'playing', 'played'], correct:0 },
+        { q:'I ___ my teeth twice a day.', opts:['brush', 'brushes', 'brushing', 'brushed'], correct:0 },
+        { q:'The sun ___ in the east.', opts:['rise', 'rises', 'rising', 'rose'], correct:1 },
+        { q:'___ we have class tomorrow?', opts:['Do', 'Does', 'Is', 'Are'], correct:0 },
+        { q:'She ___ three languages.', opts:['speak', 'speaks', 'speaking', 'spoke'], correct:1 },
+        { q:'I ___ my room every Sunday.', opts:['clean', 'cleans', 'cleaning', 'cleaned'], correct:0 },
+        { q:'He ___ not drink coffee.', opts:['do', 'don\'t', 'does', 'doesn\'t'], correct:3 }
       ]},
     { id:3, name:'MONTAÑAS ROCOSAS', biomeLabel:'MONTAÑAS ROCOSAS · VERB TO BE', icon:'⛰️', zone:3, enemyName:'SLIME MANGO',
       desc:'Verb to be — am / is / are.',
       questions:[
-        { q:'I ___ a student.', opts:['am','is','are','be'], correct:0 },
-        { q:'She ___ my sister.', opts:['am','is','are','be'], correct:1 },
-        { q:'They ___ my friends.', opts:['am','is','are','be'], correct:2 },
-        { q:'___ you ready?', opts:['Am','Is','Are','Be'], correct:2 },
-        { q:'It ___ a sunny day.', opts:['am','is','are','be'], correct:1 },
+        { q:'I ___ a student.', opts:['am', 'is', 'are', 'be'], correct:0 },
+        { q:'She ___ my sister.', opts:['am', 'is', 'are', 'be'], correct:1 },
+        { q:'They ___ my friends.', opts:['am', 'is', 'are', 'be'], correct:2 },
+        { q:'___ you ready?', opts:['Am', 'Is', 'Are', 'Be'], correct:2 },
+        { q:'It ___ a sunny day.', opts:['am', 'is', 'are', 'be'], correct:1 },
+        { q:'We ___ at school right now.', opts:['am', 'is', 'are', 'be'], correct:2 },
+        { q:'He ___ not hungry.', opts:['am', 'isn\'t', 'aren\'t', 'not'], correct:1 },
+        { q:'I ___ not tired.', opts:['am not', 'isn\'t', 'aren\'t', 'not am'], correct:0 },
+        { q:'They ___ not at home.', opts:['am not', 'isn\'t', 'aren\'t', 'not'], correct:2 },
+        { q:'___ she a teacher?', opts:['Am', 'Is', 'Are', 'Be'], correct:1 },
+        { q:'___ they from Guatemala?', opts:['Am', 'Is', 'Are', 'Be'], correct:2 },
+        { q:'My parents ___ very kind.', opts:['am', 'is', 'are', 'be'], correct:2 },
+        { q:'This book ___ interesting.', opts:['am', 'is', 'are', 'be'], correct:1 },
+        { q:'You and I ___ classmates.', opts:['am', 'is', 'are', 'be'], correct:2 },
+        { q:'The weather ___ cold today.', opts:['am', 'is', 'are', 'be'], correct:1 },
+        { q:'I ___ eight years old.', opts:['am', 'is', 'are', 'be'], correct:0 },
+        { q:'___ your shoes new?', opts:['Am', 'Is', 'Are', 'Be'], correct:2 },
+        { q:'He ___ my best friend.', opts:['am', 'is', 'are', 'be'], correct:1 }
       ]},
     { id:4, name:'CUMBRES DEL VIENTO', biomeLabel:'CUMBRES DEL VIENTO · PRESENTE PROGRESIVO', icon:'🌬️', zone:4, enemyName:'SLIME MANGO',
       desc:'Presente progresivo (-ing).',
       questions:[
-        { q:'I ___ (eat) dinner right now.', opts:['eat','eating','am eating','eats'], correct:2 },
-        { q:'She ___ (read) a book at the moment.', opts:['is reading','read','reads','reading'], correct:0 },
-        { q:'They ___ (play) in the park now.', opts:['play','plays','are playing','played'], correct:2 },
-        { q:'We ___ (study) English right now.', opts:['study','are studying','studies','studied'], correct:1 },
-        { q:'He ___ (run) very fast!', opts:['run','runs','is running','ran'], correct:2 },
+        { q:'I ___ (eat) dinner right now.', opts:['eat', 'eating', 'am eating', 'eats'], correct:2 },
+        { q:'She ___ (read) a book at the moment.', opts:['is reading', 'read', 'reads', 'reading'], correct:0 },
+        { q:'They ___ (play) in the park now.', opts:['play', 'plays', 'are playing', 'played'], correct:2 },
+        { q:'We ___ (study) English right now.', opts:['study', 'are studying', 'studies', 'studied'], correct:1 },
+        { q:'He ___ (run) very fast!', opts:['run', 'runs', 'is running', 'ran'], correct:2 },
+        { q:'___ you (listen) to me?', opts:['Are', 'Is', 'Do', 'Does'], correct:0 },
+        { q:'The baby ___ (sleep) right now.', opts:['sleep', 'sleeps', 'is sleeping', 'slept'], correct:2 },
+        { q:'I ___ not (watch) TV at the moment.', opts:['am not watching', 'isn\'t watching', 'don\'t watch', 'not watching'], correct:0 },
+        { q:'___ she (cook) dinner now?', opts:['Is', 'Are', 'Do', 'Does'], correct:0 },
+        { q:'We ___ (wait) for the bus.', opts:['waits', 'are waiting', 'wait', 'waited'], correct:1 },
+        { q:'The kids ___ (swim) in the pool.', opts:['swims', 'is swimming', 'are swimming', 'swam'], correct:2 },
+        { q:'I ___ (write) a letter right now.', opts:['am writing', 'writes', 'write', 'wrote'], correct:0 },
+        { q:'He ___ not (work) today.', opts:['isn\'t working', 'doesn\'t work', 'aren\'t working', 'not working'], correct:0 },
+        { q:'___ they (dance) at the party?', opts:['Are', 'Is', 'Do', 'Does'], correct:0 },
+        { q:'My mom ___ (clean) the house now.', opts:['clean', 'cleans', 'is cleaning', 'cleaned'], correct:2 },
+        { q:'I ___ (learn) English this year.', opts:['learn', 'am learning', 'learns', 'learned'], correct:1 },
+        { q:'Look! It ___ (rain) outside.', opts:['rain', 'rains', 'is raining', 'rained'], correct:2 },
+        { q:'We ___ (not/sleep) right now.', opts:['aren\'t sleeping', 'don\'t sleep', 'isn\'t sleeping', 'not sleeping'], correct:0 }
       ]},
     { id:5, name:'TIERRAS DEL CREPÚSCULO', biomeLabel:'TIERRAS DEL CREPÚSCULO · FUTURO CON WILL', icon:'🔮', zone:5, enemyName:'SLIME MANGO',
       desc:'Futuro simple con WILL.',
       questions:[
-        { q:'I ___ visit my grandma tomorrow.', opts:['will','am','was','do'], correct:0 },
-        { q:'It ___ rain tonight.', opts:['wills','will','is will','willing'], correct:1 },
-        { q:'___ you help me later?', opts:['Will','Do','Are','Was'], correct:0 },
-        { q:'They ___ not come to the party.', opts:['will','wills','willing','willed'], correct:0 },
-        { q:'We ___ travel next summer.', opts:['will','wills','are will','willed'], correct:0 },
+        { q:'I ___ visit my grandma tomorrow.', opts:['will', 'am', 'was', 'do'], correct:0 },
+        { q:'It ___ rain tonight.', opts:['wills', 'will', 'is will', 'willing'], correct:1 },
+        { q:'___ you help me later?', opts:['Will', 'Do', 'Are', 'Was'], correct:0 },
+        { q:'They ___ not come to the party.', opts:['will', 'wills', 'willing', 'willed'], correct:0 },
+        { q:'We ___ travel next summer.', opts:['will', 'wills', 'are will', 'willed'], correct:0 },
+        { q:'She ___ be happy to see you.', opts:['will', 'wills', 'is will', 'willed'], correct:0 },
+        { q:'I ___ not forget your birthday.', opts:['will', 'won\'t', 'don\'t will', 'not will'], correct:1 },
+        { q:'___ he call you tonight?', opts:['Will', 'Do', 'Is', 'Was'], correct:0 },
+        { q:'The train ___ arrive at 9 pm.', opts:['will', 'wills', 'is will', 'willed'], correct:0 },
+        { q:'We ___ not be late.', opts:['will', 'won\'t', 'don\'t', 'not will'], correct:1 },
+        { q:'I think it ___ snow tomorrow.', opts:['will', 'wills', 'willed', 'willing'], correct:0 },
+        { q:'___ they win the game?', opts:['Will', 'Do', 'Are', 'Is'], correct:0 },
+        { q:'You ___ love this movie.', opts:['will', 'wills', 'is will', 'willed'], correct:0 },
+        { q:'My dad ___ pick me up at 5.', opts:['will', 'wills', 'is will', 'willed'], correct:0 },
+        { q:'I ___ study harder next year.', opts:['will', 'wills', 'am will', 'willed'], correct:0 },
+        { q:'She ___ not be at school tomorrow.', opts:['will', 'won\'t', 'doesn\'t will', 'not will'], correct:1 },
+        { q:'___ we see you this weekend?', opts:['Will', 'Do', 'Are', 'Is'], correct:0 },
+        { q:'They ___ move to a new house soon.', opts:['will', 'wills', 'are will', 'willed'], correct:0 }
       ]},
     { id:6, name:'EL CASTILLO FINAL', biomeLabel:'CASTILLO · PASADO SIMPLE', icon:'👑', zone:6, enemyName:'SLIME MANGO', boss:true,
       desc:'Pasado simple — afirmativo, negativo e interrogativo. ¡El desafío final!',
       questions:[
-        { q:'I ___ (play) soccer yesterday.', opts:['play','played','plays','playing'], correct:1 },
-        { q:'She ___ not (go) to school last Monday.', opts:['did','does','do','went'], correct:0 },
-        { q:'___ you (see) that movie?', opts:['Did','Do','Does','Were'], correct:0 },
-        { q:'They ___ (eat) breakfast at 8am.', opts:['eat','eats','ate','eating'], correct:2 },
-        { q:'We ___ (not/have) time yesterday.', opts:["didn't have","don't have","haven't","not had"], correct:0 },
+        { q:'I ___ (play) soccer yesterday.', opts:['play', 'played', 'plays', 'playing'], correct:1 },
+        { q:'She ___ not (go) to school last Monday.', opts:['did', 'does', 'do', 'went'], correct:0 },
+        { q:'___ you (see) that movie?', opts:['Did', 'Do', 'Does', 'Were'], correct:0 },
+        { q:'They ___ (eat) breakfast at 8am.', opts:['eat', 'eats', 'ate', 'eating'], correct:2 },
+        { q:'We ___ (not/have) time yesterday.', opts:['didn\'t have', 'don\'t have', 'haven\'t', 'not had'], correct:0 },
+        { q:'He ___ (go) to the park last weekend.', opts:['go', 'goes', 'went', 'going'], correct:2 },
+        { q:'I ___ (watch) a movie last night.', opts:['watch', 'watched', 'watches', 'watching'], correct:1 },
+        { q:'___ she (call) you yesterday?', opts:['Did', 'Does', 'Do', 'Was'], correct:0 },
+        { q:'They ___ not (study) for the test.', opts:['didn\'t', 'don\'t', 'doesn\'t', 'not'], correct:0 },
+        { q:'We ___ (visit) our grandparents last month.', opts:['visit', 'visits', 'visited', 'visiting'], correct:2 },
+        { q:'I ___ (buy) a new book yesterday.', opts:['buy', 'buys', 'bought', 'buying'], correct:2 },
+        { q:'___ they (arrive) on time?', opts:['Did', 'Do', 'Does', 'Were'], correct:0 },
+        { q:'She ___ (write) a letter last week.', opts:['write', 'writes', 'wrote', 'writing'], correct:2 },
+        { q:'He ___ not (finish) his homework.', opts:['didn\'t finish', 'doesn\'t finish', 'don\'t finish', 'not finish'], correct:0 },
+        { q:'I ___ (see) my friend yesterday.', opts:['see', 'sees', 'saw', 'seeing'], correct:2 },
+        { q:'We ___ (go) to the beach last summer.', opts:['go', 'goes', 'went', 'gone'], correct:2 },
+        { q:'___ you (do) your homework last night?', opts:['Did', 'Do', 'Does', 'Were'], correct:0 },
+        { q:'They ___ (have) a great time at the party.', opts:['have', 'has', 'had', 'having'], correct:2 },
+        { q:'I ___ not (sleep) well last night.', opts:['didn\'t sleep', 'don\'t sleep', 'doesn\'t sleep', 'not slept'], correct:0 },
+        { q:'She ___ (come) home late yesterday.', opts:['come', 'comes', 'came', 'coming'], correct:2 },
+        { q:'We ___ (eat) pizza last Friday.', opts:['eat', 'eats', 'ate', 'eating'], correct:2 },
+        { q:'___ he (win) the race?', opts:['Did', 'Do', 'Does', 'Was'], correct:0 },
+        { q:'I ___ (take) the bus to school yesterday.', opts:['take', 'takes', 'took', 'taking'], correct:2 },
+        { q:'They ___ not (play) well in the last game.', opts:['didn\'t play', 'don\'t play', 'doesn\'t play', 'not played'], correct:0 }
       ]},
   ];
 
@@ -673,6 +787,19 @@
 
   /* ===================== BATTLE SCREEN ===================== */
   let battleLevel = null;
+  let battleQuestions = [];
+  const QUESTIONS_PER_BATTLE = 5;
+  function shuffleArray(arr){
+    const a = arr.slice();
+    for(let i=a.length-1;i>0;i--){
+      const j = Math.floor(Math.random()*(i+1));
+      [a[i],a[j]] = [a[j],a[i]];
+    }
+    return a;
+  }
+  function sampleQuestions(bank, n){
+    return shuffleArray(bank).slice(0, Math.min(n, bank.length));
+  }
   let battleHearts = 0, battleQIndex = 0, battleLocked = false, battleXpGained = 0, battleGoldGained = 0;
   let flameActive = false, shieldActive = false;
 
@@ -690,6 +817,7 @@
 
   function startBattle(levelId){
     battleLevel = LEVELS.find(l=>l.id===levelId);
+    battleQuestions = sampleQuestions(battleQuestions, QUESTIONS_PER_BATTLE);
     battleHearts = state.maxHearts * 2; // segments (50% per hit)
     battleQIndex = 0; battleXpGained = 0; battleGoldGained = 0;
     flameActive = false; shieldActive = false;
@@ -731,7 +859,7 @@
   }
 
   function loadQuestion(){
-    const item = battleLevel.questions[battleQIndex % battleLevel.questions.length];
+    const item = battleQuestions[battleQIndex % battleQuestions.length];
     el('question-text').textContent = item.q;
     const opts = el('options'); opts.innerHTML = '';
     item.opts.forEach((opt,i)=>{
@@ -773,7 +901,7 @@
       }, 150);
       setTimeout(()=>{
         el('enemy-stage').classList.remove('hit');
-        if(battleQIndex >= battleLevel.questions.length){ onVictory(); }
+        if(battleQIndex >= battleQuestions.length){ onVictory(); }
         else { nextTurn(); }
       }, 750);
     } else {
@@ -781,7 +909,7 @@
         shieldActive = false; renderConsumableRow();
         el('dialogue').textContent = '¡TU ESCUDO SE ROMPE PERO TE PROTEGE!';
         setTimeout(()=>{ shakeScreen(); }, 150);
-        setTimeout(()=>{ battleQIndex++; if(battleQIndex >= battleLevel.questions.length){ onVictory(); } else { nextTurn(); } }, 700);
+        setTimeout(()=>{ battleQIndex++; if(battleQIndex >= battleQuestions.length){ onVictory(); } else { nextTurn(); } }, 700);
         return;
       }
       el('dialogue').textContent = '¡INCORRECTO! EL ENEMIGO TE ATACA.';
@@ -794,7 +922,7 @@
       setTimeout(()=>{
         el('enemy-stage').classList.remove('lunge');
         if(battleHearts<=0){ onDefeat(); }
-        else { battleQIndex++; if(battleQIndex >= battleLevel.questions.length){ onVictory(); } else { nextTurn(); } }
+        else { battleQIndex++; if(battleQIndex >= battleQuestions.length){ onVictory(); } else { nextTurn(); } }
       }, 750);
     }
   }

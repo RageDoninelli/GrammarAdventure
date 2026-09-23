@@ -1,6 +1,6 @@
 // Grammar Quest - Service Worker
 // Cachea el shell completo (todo vive en index.html) para que funcione offline una vez instalada.
-const CACHE_NAME = 'grammar-quest-v2';
+const CACHE_NAME = 'grammar-quest-v3';
 const APP_SHELL = [
   './',
   './index.html',
